@@ -7,7 +7,7 @@ async function getSatipXml(config) {
   };
 
   try {
-    const response = await axios.get(`${config.octopus_net_url}/description.xml`, options);
+    const response = await axios.get(config.satip_xml_url, options);
     return response;
   } catch (err) {
     return err;
@@ -32,7 +32,7 @@ async function getM3uPlaylist(config, m3uPath) {
   };
 
   try {
-    const m3uUrl = m3uPath ? `${config.octopus_net_url}${m3uPath}` : `${config.octopus_net_url}/channellist.lua?select=m3u`;
+    const m3uUrl = m3uPath ? `${config.octopus_net_url}${m3uPath}` : config.m3u_url;
     const response = await axios.get(m3uUrl, options);
     return response;
   } catch (err) {

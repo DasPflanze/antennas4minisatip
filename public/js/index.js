@@ -23,7 +23,8 @@ function urlReplace(elementId) {
 
 fetch('/antennas_config.json').then((result) => {
   let config = JSON.parse(result);
-  urlReplace('#octopusNetUrl')(config.octopus_net_url);
+  urlReplace('#satipXmlUrl')(config.satip_xml_url);
+  urlReplace('#m3uUrl')(config.m3u_url);
   replace('#minisatipIp')(config.minisatip_ip);
   replace('#minisatipPort')(config.minisatip_port);
   urlReplace('#antennasUrl')(config.antennas_url);
