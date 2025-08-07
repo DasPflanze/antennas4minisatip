@@ -1,0 +1,143 @@
+#EXTM3U
+#EXTINF:0, 1-2-3.tv HD
+rtsp://192.168.178.58:554/?src=1&freq=10803&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,98,767,771,34
+#EXTINF:0, 3sat HD
+rtsp://192.168.178.58:554/?src=1&freq=11347&pol=v&msys=dvbs2&sr=22000&pids=0,16,17,18,20,6500,6510,6520,6521,6522,6523,6531,6530
+#EXTINF:0, a.tv HD
+rtsp://192.168.178.58:554/?src=1&freq=11553&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,101,1010,1012
+#EXTINF:0, ANIXE HD
+rtsp://192.168.178.58:554/?src=1&freq=10773&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,96,255,259
+#EXTINF:0, ARD alpha HD
+rtsp://192.168.178.58:554/?src=1&freq=11053&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,5420,5421,5422,5423,5427,5426,5425,5424
+#EXTINF:0, arte HD
+rtsp://192.168.178.58:554/?src=1&freq=11494&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,5110,5111,5112,5113,5116,5117,5198,5114
+#EXTINF:0, ATV HD
+rtsp://192.168.178.58:554/?src=1&freq=11244&pol=h&msys=dvbs&sr=22000&x_ci=1&x_pmt=228.13228&pids=0,16,17,18,20,228,2280,2281,2285
+#EXTINF:0, ATV2 HD
+rtsp://192.168.178.58:554/?src=1&freq=11244&pol=h&msys=dvbs&sr=22000&x_ci=1&x_pmt=223.13223&pids=0,16,17,18,20,223,2230,2231,2235
+#EXTINF:0, BR Fernsehen Nord HD
+rtsp://192.168.178.58:554/?src=1&freq=11582&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,5210,5201,5202,5203,5207,5206,5205,5204
+#EXTINF:0, BR Fernsehen Süd HD
+rtsp://192.168.178.58:554/?src=1&freq=11582&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,5200,5201,5202,5203,5207,5206,5205,5204
+#EXTINF:0, Comedy Central HD
+rtsp://192.168.178.58:554/?src=1&freq=11973&pol=v&msys=dvbs&sr=27500&pids=0,16,17,18,20,312,3021,3023,3024,3039
+#EXTINF:0, Das Erste HD
+rtsp://192.168.178.58:554/?src=1&freq=11494&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,5100,5101,5102,5103,5107,5106,5105,5104
+#EXTINF:0, Deluxe Music HD
+rtsp://192.168.178.58:554/?src=1&freq=10803&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,99,1023,1027
+#EXTINF:0, Die Maus
+rtsp://192.168.178.58:554/?src=1&freq=11053&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,670,671
+#EXTINF:0, Disney Channel HD
+rtsp://192.168.178.58:554/?src=1&freq=10803&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,96,255,259,32
+#EXTINF:0, DMAX HD
+rtsp://192.168.178.58:554/?src=1&freq=12574&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,98,767,771,34
+#EXTINF:0, DOKUSAT
+rtsp://192.168.178.58:554/?src=1&freq=11836&pol=h&msys=dvbs&sr=27500&pids=0,16,17,18,20,1000,101,102,104
+#EXTINF:0, Eurosport 1 HD
+rtsp://192.168.178.58:554/?src=1&freq=11112&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,98,767,771
+#EXTINF:0, FRANCE 2 UHD HDR
+rtsp://192.168.178.58:554/?src=1&freq=12324&pol=v&msys=dvbs2&sr=29700&pids=0,16,17,18,20,300,310,321,322,323,343
+#EXTINF:0, Franken Plus HD
+rtsp://192.168.178.58:554/?src=1&freq=11553&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,110,1100,1102
+#EXTINF:0, hr-fernsehen HD
+rtsp://192.168.178.58:554/?src=1&freq=10891&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,5350,5351,5352,5353,5357,5356,5355,5354
+#EXTINF:0, Kabel Eins Doku HD
+rtsp://192.168.178.58:554/?src=1&freq=11464&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,101,1535,1539,37
+#EXTINF:0, kabel eins HD
+rtsp://192.168.178.58:554/?src=1&freq=11464&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,98,767,771,34
+#EXTINF:0, KiKA HD
+rtsp://192.168.178.58:554/?src=1&freq=11347&pol=v&msys=dvbs2&sr=22000&pids=0,16,17,18,20,6600,6610,6620,6621,6622,6623,6631,6630
+#EXTINF:0, MDR S-Anhalt HD
+rtsp://192.168.178.58:554/?src=1&freq=10891&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,5330,5331,5332,5333,5337,5336,5335,5334
+#EXTINF:0, MDR Sachsen HD
+rtsp://192.168.178.58:554/?src=1&freq=10891&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,5320,5331,5332,5333,5337,5336,5335,5334
+#EXTINF:0, MDR Thüringen HD
+rtsp://192.168.178.58:554/?src=1&freq=10891&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,5340,5331,5332,5333,5337,5336,5335,5334
+#EXTINF:0, Movistar Plus+ HD
+rtsp://192.168.178.58:554/?src=1&freq=10758&pol=v&msys=dvbs&sr=22000&pids=0,16,17,18,20,1024,160,80,81,82,83,87,88,32
+#EXTINF:0, Movistar Plus+2 HD
+rtsp://192.168.178.58:554/?src=1&freq=10758&pol=v&msys=dvbs&sr=22000&pids=0,16,17,18,20,1038,173,132,133,134,135,136,137
+#EXTINF:0, mþnchen.tv HD
+rtsp://192.168.178.58:554/?src=1&freq=11553&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,102,1020,1022
+#EXTINF:0, N24 DOKU
+rtsp://192.168.178.58:554/?src=1&freq=12460&pol=h&msys=dvbs&sr=27500&pids=0,16,17,18,20,97,511,512
+#EXTINF:0, NDR FS HH HD
+rtsp://192.168.178.58:554/?src=1&freq=11582&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,5240,5221,5222,5223,5227,5226,5245,5224
+#EXTINF:0, NDR FS MV HD
+rtsp://192.168.178.58:554/?src=1&freq=11582&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,5230,5221,5222,5223,5227,5226,5235,5224
+#EXTINF:0, NDR FS NDS HD
+rtsp://192.168.178.58:554/?src=1&freq=11582&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,5220,5221,5222,5223,5227,5226,5225,5224
+#EXTINF:0, NDR FS SH HD
+rtsp://192.168.178.58:554/?src=1&freq=11582&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,5250,5221,5222,5223,5227,5226,5255,5224
+#EXTINF:0, NITRO HD
+rtsp://192.168.178.58:554/?src=1&freq=11082&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,55,500,510,550,520
+#EXTINF:0, ntv HD
+rtsp://192.168.178.58:554/?src=1&freq=10832&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,100,1279,1283,1284,36
+#EXTINF:0, ONE HD
+rtsp://192.168.178.58:554/?src=1&freq=11053&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,5410,5411,5412,5413,5417,5416,5415,5414
+#EXTINF:0, phoenix HD
+rtsp://192.168.178.58:554/?src=1&freq=11582&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,5260,5261,5262,5263,5264
+#EXTINF:0, Pro7 MAXX HD
+rtsp://192.168.178.58:554/?src=1&freq=11464&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,100,1279,1283,36
+#EXTINF:0, Pro7Sat.1 UHD
+rtsp://192.168.178.58:554/?src=1&freq=10994&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,98,767,771
+#EXTINF:0, ProSieben HD
+rtsp://192.168.178.58:554/?src=1&freq=11464&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,97,511,515,33
+#EXTINF:0, PULS 24 HD
+rtsp://192.168.178.58:554/?src=1&freq=11671&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,100,1279,1283,36
+#EXTINF:0, rbb Berlin HD
+rtsp://192.168.178.58:554/?src=1&freq=10891&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,5310,5311,5312,5313,5317,5316,5315,5314
+#EXTINF:0, RTL HD
+rtsp://192.168.178.58:554/?src=1&freq=10832&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,96,255,259,48,32
+#EXTINF:0, RTL UHD
+rtsp://192.168.178.58:554/?src=1&freq=11391&pol=h&msys=dvbs&sr=22000&pids=0,16,17,18,20,106,2815,2816,42
+#EXTINF:0, RTLup HD
+rtsp://192.168.178.58:554/?src=1&freq=10832&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,102,1791,1795,38
+#EXTINF:0, RTLZWEI HD
+rtsp://192.168.178.58:554/?src=1&freq=10832&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,101,1535,1539,54,37
+#EXTINF:0, SAT.1 GOLD HD
+rtsp://192.168.178.58:554/?src=1&freq=11464&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,102,1791,1795,38
+#EXTINF:0, SAT.1 Gold HD
+rtsp://192.168.178.58:554/?src=1&freq=11112&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,96,255,259,32
+#EXTINF:0, SAT.1 HD
+rtsp://192.168.178.58:554/?src=1&freq=11464&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,96,255,259,32
+#EXTINF:0, ServusTV HD Oesterreich
+rtsp://192.168.178.58:554/?src=1&freq=11303&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,109,3583,3584,3585,3587,3588
+#EXTINF:0, SES UHD Demo Channel
+rtsp://192.168.178.58:554/?src=1&freq=10994&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,97,511,512,4608
+#EXTINF:0, SES UHD Demo Channel 06
+rtsp://192.168.178.58:554/?src=1&freq=10994&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,36,511,512,4608
+#EXTINF:0, SIXX HD
+rtsp://192.168.178.58:554/?src=1&freq=11464&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,99,1023,1027,35
+#EXTINF:0, SPORT1 HD
+rtsp://192.168.178.58:554/?src=1&freq=10803&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,101,1535,1539
+#EXTINF:0, SUPER RTL HD
+rtsp://192.168.178.58:554/?src=1&freq=11082&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,53,300,310,330,320
+#EXTINF:0, SWR BW HD
+rtsp://192.168.178.58:554/?src=1&freq=11494&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,5120,5121,5122,5123,5127,5126,5125,5124
+#EXTINF:0, tagesschau24 HD
+rtsp://192.168.178.58:554/?src=1&freq=11053&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,5400,5401,5402,5403,5407,5406,5404
+#EXTINF:0, TELE 5 HD
+rtsp://192.168.178.58:554/?src=1&freq=12574&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,97,511,515
+#EXTINF:0, UHD1 by ASTRA / HD+
+rtsp://192.168.178.58:554/?src=1&freq=10994&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,96,101,102
+#EXTINF:0, VOX HD
+rtsp://192.168.178.58:554/?src=1&freq=10832&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,97,511,515,49,33
+#EXTINF:0, VOXup HD
+rtsp://192.168.178.58:554/?src=1&freq=10832&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,103,2047,2051,39
+#EXTINF:0, WDR HD Dortmund
+rtsp://192.168.178.58:554/?src=1&freq=11523&pol=h&msys=dvbs&sr=22000&pids=0,16,17,18,20,140,101,102,103,107,106,105,104
+#EXTINF:0, WDR HD Düsseldorf
+rtsp://192.168.178.58:554/?src=1&freq=11523&pol=h&msys=dvbs&sr=22000&pids=0,16,17,18,20,160,101,102,103,107,106,105,104
+#EXTINF:0, WDR HD Köln
+rtsp://192.168.178.58:554/?src=1&freq=11523&pol=h&msys=dvbs&sr=22000&pids=0,16,17,18,20,100,101,102,103,107,106,105,104
+#EXTINF:0, WDR HD Münster
+rtsp://192.168.178.58:554/?src=1&freq=11523&pol=h&msys=dvbs&sr=22000&pids=0,16,17,18,20,180,101,102,103,107,106,105,104
+#EXTINF:0, WELT HD
+rtsp://192.168.178.58:554/?src=1&freq=10773&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,98,767,771,37
+#EXTINF:0, ZDF HD
+rtsp://192.168.178.58:554/?src=1&freq=11362&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,6100,6110,6120,6121,6122,6123,6131,6130
+#EXTINF:0, zdf_neo HD
+rtsp://192.168.178.58:554/?src=1&freq=11362&pol=h&msys=dvbs2&sr=22000&pids=0,16,17,18,20,6300,6310,6320,6321,6322,6323,6331,6330
+#EXTINF:0, ZDFinfo HD
+rtsp://192.168.178.58:554/?src=1&freq=11347&pol=v&msys=dvbs2&sr=22000&pids=0,16,17,18,20,6700,6710,6720,6721,6722,6723,6731,6730

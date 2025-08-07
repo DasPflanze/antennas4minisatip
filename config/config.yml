@@ -1,4 +1,9 @@
-tvheadend_url: http://admin:test@192.168.0.1:9981
 antennas_url: http://127.0.0.1:5004
-tuner_count: 6 # numbers of tuners in tvheadend
+tuner_count: 6 # numbers of tuners
 device_uuid: 2f70c0d7-90a3-4429-8275-cbeeee9cd605
+
+# Octopus Net configuration
+octopus_net_url: http://192.168.178.58
+minisatip_ip: 192.168.1.100
+minisatip_port: 554
+use_satip_xml: true # use satip.xml to get M3U URL, false for direct M3U URL

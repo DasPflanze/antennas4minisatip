@@ -1,6 +1,6 @@
 module.exports = (config) => {
   const device = {
-    FriendlyName: 'HDHomerun (Antennas)',
+    FriendlyName: 'HDHomerun (Antennas4Minisatip)',
     Manufacturer: 'Silicondust',
     ManufacturerURL: 'https://github.com/jfarseneau/antennas',
     ModelNumber: 'HDTC-2US',

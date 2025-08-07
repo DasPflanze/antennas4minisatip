@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns="urn:schemas-upnp-org:device-1-0" configId="1">
+<specVersion>
+<major>1</major>
+<minor>1</minor>
+</specVersion>
+<device>
+<deviceType>urn:ses-com:device:SatIPServer:1</deviceType>
+<friendlyName>octonet-mc
+</friendlyName>
+<manufacturer>Digital Devices GmbH</manufacturer>
+<manufacturerURL>http://www.digitaldevices.de</manufacturerURL>
+<modelDescription>OctopusNet</modelDescription>
+<modelName>OctopusNet</modelName>
+<modelNumber>1.0</modelNumber>
+<modelURL>http://www.digitaldevices.de/OctopusNet.html</modelURL>
+<serialNumber>6717</serialNumber>
+<UDN>uuid:dd848d00-26ec-11eb-8000-54847b00347a</UDN>
+<iconList>
+<icon>
+<mimetype>image/png</mimetype>
+<width>120</width>
+<height>120</height>
+<depth>24</depth>
+<url>/icons/dd-120.png</url>
+</icon>
+<icon>
+<mimetype>image/jpeg</mimetype>
+<width>120</width>
+<height>120</height>
+<depth>24</depth>
+<url>/icons/dd-120.jpg</url>
+</icon>
+<icon>
+<mimetype>image/png</mimetype>
+<width>48</width>
+<height>48</height>
+<depth>24</depth>
+<url>/icons/dd-48.png</url>
+</icon>
+<icon>
+<mimetype>image/jpeg</mimetype>
+<width>48</width>
+<height>48</height>
+<depth>24</depth>
+<url>/icons/dd-48.jpg</url>
+</icon>
+</iconList>
+<presentationURL>/</presentationURL>
+<satip:X_SATIPCAP xmlns:satip="urn:ses-com:satip">DVBS2-3,DVBT2-3,DVBC2-3</satip:X_SATIPCAP>
+<satip:X_SATIPM3U xmlns:satip="urn:ses-com:satip">/channellist.lua?select=m3u</satip:X_SATIPM3U>
+</device>
+</root>

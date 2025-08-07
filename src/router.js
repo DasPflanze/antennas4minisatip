@@ -1,36 +1,50 @@
 const Router = require('koa-router');
 
 const lineup = require('./lineup');
-const tvheadendApi = require('./tvheadendApi');
+const octopusApi = require('./octopusApi');
+const m3uParser = require('./m3uParser');
 
 async function getConnectionStatus(config) {
   try {
-    const channels = await tvheadendApi.get('/api/channel/grid?start=0&limit=999999', config);
+    const m3uContent = await octopusApi.getChannelsFromOctopusNet(config);
+    
+    if (!m3uContent) {
+      throw new Error('Failed to retrieve M3U content from Octopus Net');
+    }
+    
+    if (!m3uParser.validateM3uFormat(m3uContent)) {
+      throw new Error('Invalid M3U format received from Octopus Net');
+    }
+    
+    const channels = m3uParser.parseM3uContent(m3uContent);
+    const channelCount = channels.length;
+    
     let status = 'All systems go';
-    if (channels?.response?.status === 403) { throw new Error('Username and password not accepted by Tvheadend'); }
-    if (channels?.code === 'ECONNREFUSED') { throw new Error('Unable to connect to Tvheadend'); }
-    if (channels?.data?.total === 0) { status = 'Connected but no channels found from Tvheadend'; }
+    if (channelCount === 0) {
+      status = 'Connected to Octopus Net but no channels found';
+    }
+    
     return {
       status,
-      channelCount: channels?.data?.total,
+      channelCount,
     };
+    
   } catch (err) {
     console.log(`
-    Antennas failed to connect to Tvheadend!
+    Antennas failed to connect to Octopus Net!
     Check that:
-      - Tvheadend is running.
-      - Antennas is correctly pointing to Tvheadend, on the right port.
-      - That your username and login are correct.
+      - Octopus Net is running and accessible.
+      - The octopus_net_url is correct.
+      - The M3U endpoint is available.
 
     Here's a dump of the error:
     ${err}`);
 
     let status = 'Unknown error, check the logs for more details';
 
-    if (err && err.response && err.response.status === 401) { status = 'Failed to authenticate with Tvheadend'; }
-    if (err && err.code === 'ECONNABORTED') { status = 'Unable to find Tvheadend server, make sure the server is up and the configuration is pointing to the right spot'; }
-    if (err && err.message === 'Auth params error.' || err?.message === 'Username and password not accepted by Tvheadend' ) { status = 'Access denied to Tvheadend; check the username, password, and access rights'; }
-    if (err && err.message === 'Unable to connect to Tvheadend') { status = 'Unable to connect to Tvheadend; is it running?'; }
+    if (err && err.code === 'ECONNREFUSED') { status = 'Unable to connect to Octopus Net'; }
+    if (err && err.code === 'ECONNABORTED') { status = 'Unable to find Octopus Net server, make sure the server is up and the configuration is pointing to the right spot'; }
+    if (err && err.message && err.message.includes('M3U')) { status = 'Failed to parse M3U content from Octopus Net'; }
     
     return {
       status,
