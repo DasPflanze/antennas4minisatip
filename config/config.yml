@@ -1,11 +1,12 @@
 antennas_url: http://127.0.0.1:5004
-tuner_count: 6 # numbers of tuners
+tuner_count: 3 # numbers of tuners
 device_uuid: 2f70c0d7-90a3-4429-8275-cbeeee9cd605
 
 # Octopus Net configuration
 octopus_net_url: http://192.168.178.58 # base URL, only used if satip_xml_url or m3u_url are not specified
-satip_xml_url: http://192.168.178.58/description.xml # direct URL to SAT>IP XML
+satip_xml_url: http://192.168.178.58/octoserve/octonet.xml # direct URL to SAT>IP XML
 m3u_url: http://192.168.178.58/channellist.lua?select=m3u # direct URL to M3U playlist
-minisatip_ip: 192.168.1.100
-minisatip_port: 554
+minisatip_ip: 192.168.178.194
+minisatip_port: 8875 # HTTP port for Plex compatibility (554 for RTSP)
+use_http_streams: true # convert RTSP to HTTP for Plex compatibility
 use_satip_xml: true # use satip_xml_url to get M3U URL, false for direct m3u_url

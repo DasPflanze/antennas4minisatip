@@ -1,7 +1,7 @@
 const yaml = require('js-yaml');
 const fs = require('fs');
 
-function structureConfig(antennasUrl, tunerCount, deviceUuid, octopusNetUrl, satipXmlUrl, m3uUrl, minisatipIp, minisatipPort, useSatipXml) {
+function structureConfig(antennasUrl, tunerCount, deviceUuid, octopusNetUrl, satipXmlUrl, m3uUrl, minisatipIp, minisatipPort, useHttpStreams, useSatipXml) {
   return {
     antennas_url: antennasUrl,
     tuner_count: tunerCount,
@@ -11,6 +11,7 @@ function structureConfig(antennasUrl, tunerCount, deviceUuid, octopusNetUrl, sat
     m3u_url: m3uUrl,
     minisatip_ip: minisatipIp,
     minisatip_port: minisatipPort,
+    use_http_streams: useHttpStreams,
     use_satip_xml: useSatipXml,
   };
 }
@@ -27,7 +28,8 @@ function loadConfig(configFile = 'config/config.yml') {
       process.env.SATIP_XML_URL || `${process.env.OCTOPUS_NET_URL || 'http://192.168.178.58'}/description.xml`,
       process.env.M3U_URL || `${process.env.OCTOPUS_NET_URL || 'http://192.168.178.58'}/channellist.lua?select=m3u`,
       process.env.MINISATIP_IP || '192.168.1.100',
-      parseInt(process.env.MINISATIP_PORT, 10) || 554,
+      parseInt(process.env.MINISATIP_PORT, 10) || 8080,
+      process.env.USE_HTTP_STREAMS === 'true' || true,
       process.env.USE_SATIP_XML === 'true' || true
     );
   }
@@ -44,7 +46,8 @@ function loadConfig(configFile = 'config/config.yml') {
       process.env.SATIP_XML_URL || config.satip_xml_url || `${baseUrl}/description.xml`,
       process.env.M3U_URL || config.m3u_url || `${baseUrl}/channellist.lua?select=m3u`,
       process.env.MINISATIP_IP || config.minisatip_ip || '192.168.1.100',
-      parseInt(process.env.MINISATIP_PORT, 10) || config.minisatip_port || 554,
+      parseInt(process.env.MINISATIP_PORT, 10) || config.minisatip_port || 8080,
+      process.env.USE_HTTP_STREAMS === 'true' || config.use_http_streams !== false,
       process.env.USE_SATIP_XML === 'true' || config.use_satip_xml !== false
     );
   }

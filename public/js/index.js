@@ -28,6 +28,7 @@ fetch('/antennas_config.json').then((result) => {
   replace('#minisatipIp')(config.minisatip_ip);
   replace('#minisatipPort')(config.minisatip_port);
   urlReplace('#antennasUrl')(config.antennas_url);
+  replace('#useHttpStreams')(config.use_http_streams ? 'Yes' : 'No');
   replace('#useSatipXml')(config.use_satip_xml ? 'Yes' : 'No');
   replace('#tunerCount')(config.tuner_count);
   replace('#channelCount')(config.channel_count);

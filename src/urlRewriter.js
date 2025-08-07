@@ -14,6 +14,17 @@ function rewriteUrlForMinisatip(originalUrl, config) {
       url.port = config.minisatip_port.toString();
     }
     
+    // Convert RTSP to HTTP for Plex compatibility
+    if (config.use_http_streams && url.protocol === 'rtsp:') {
+      url.protocol = 'http:';
+      
+      // Minisatip HTTP format: http://IP:PORT/?parameters
+      // Keep all existing parameters from the RTSP URL
+      const searchParams = url.searchParams;
+      url.pathname = '/';
+      url.search = searchParams.toString();
+    }
+    
     return url.toString();
   } catch (error) {
     console.error(`Error rewriting URL ${originalUrl}:`, error);
