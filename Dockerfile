@@ -6,5 +6,8 @@ WORKDIR "/antennas4minisatip"
 
 RUN npm install
 
+# Create volume for config directory to allow external configuration
+VOLUME ["/antennas4minisatip/config"]
+
 EXPOSE 5004
 CMD ["npx", "--yes", "."]

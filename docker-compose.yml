@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  antennas4minisatip:
+    build: .
+    container_name: antennas4minisatip
+    network_mode: host
+    volumes:
+      - ./config:/antennas4minisatip/config
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
