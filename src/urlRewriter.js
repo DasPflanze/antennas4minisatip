@@ -5,6 +5,7 @@ function rewriteUrlForMinisatip(originalUrl, config) {
 
   try {
     const url = new URL(originalUrl);
+    const isRtsp = url.protocol === 'rtsp:';
     
     // Replace the hostname with the minisatip IP
     url.hostname = config.minisatip_ip;
@@ -15,14 +16,11 @@ function rewriteUrlForMinisatip(originalUrl, config) {
     }
     
     // Convert RTSP to HTTP for Plex compatibility
-    if (config.use_http_streams && url.protocol === 'rtsp:') {
-      url.protocol = 'http:';
-      
-      // Minisatip HTTP format: http://IP:PORT/?parameters
-      // Keep all existing parameters from the RTSP URL
-      const searchParams = url.searchParams;
-      url.pathname = '/';
-      url.search = searchParams.toString();
+    if (config.use_http_streams && isRtsp) {
+      // Build new HTTP URL manually to avoid URL class issues
+      const query = url.search;
+      const newUrl = `http://${config.minisatip_ip}:${config.minisatip_port}/${query}`;
+      return newUrl;
     }
     
     return url.toString();
