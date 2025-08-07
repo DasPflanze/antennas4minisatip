@@ -23,9 +23,11 @@ function urlReplace(elementId) {
 
 fetch('/antennas_config.json').then((result) => {
   let config = JSON.parse(result);
-  urlReplace('#tvheadendUrl')(config.tvheadend_parsed_uri);
-  urlReplace('#tvheadendStreamUrl')(config.tvheadend_parsed_stream_uri);
+  urlReplace('#octopusNetUrl')(config.octopus_net_url);
+  replace('#minisatipIp')(config.minisatip_ip);
+  replace('#minisatipPort')(config.minisatip_port);
   urlReplace('#antennasUrl')(config.antennas_url);
+  replace('#useSatipXml')(config.use_satip_xml ? 'Yes' : 'No');
   replace('#tunerCount')(config.tuner_count);
   replace('#channelCount')(config.channel_count);
   replace('#status')(config.status);
